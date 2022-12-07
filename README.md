@@ -101,3 +101,63 @@ Algoritmo SimpleCalc
 		
 FinAlgoritmo
 
+## MULTI OPTION PROGRAM
+
+Algoritmo MultiOp
+	Escribir " ------------ MULTI OPCION ----------- "
+	Escribir "Opciones Disponibles"
+	Escribir "1. Suma de dos numeros"
+	Escribir "2. Imprimir dia de la semana"
+	Escribir "3. Calcular longitud de texto"
+	Escribir "Escoga una opcion: "
+	leer opt
+	Segun opt Hacer
+		1:
+			Escribir "Ingrese primer numero"
+			leer num1
+			Escribir "Ingrese segundo numero"
+			leer num2
+			Escribir "Realizando suma ", num1, " + ", num2
+			sum <- num1 + num2
+			Escribir "El resultado es: ", sum
+		2:
+			Escribir "Ingrese un numero del 1 al 7"
+			leer sem
+			Si sem == 1 Entonces
+				Escribir "El dia de la semana es: Lunes"
+			Fin Si
+			Si sem == 2 Entonces
+				Escribir "El dia de la semana es: Martes"
+			Fin Si
+			Si sem == 3 Entonces
+				Escribir "El dia de la semana es: Miercoles"
+			Fin Si
+			Si sem == 4 Entonces
+				Escribir "El dia de la semana es: Jueves"
+			Fin Si
+			Si sem == 5 Entonces
+				Escribir "El dia de la semana es: Viernes"
+			Fin Si
+			Si sem == 6 Entonces
+				Escribir "El dia de la semana es: Sabado"
+			Fin Si
+			Si sem == 7 Entonces
+				Escribir "El dia de la semana es: Domingo"
+			Fin Si
+			Si sem >= 8 Entonces
+				Escribir "Numero no valido"
+			Fin Si
+			
+		3:
+			Escribir "Ingrese una palabra"
+			leer pal
+			lpal <- Longitud(pal)
+			Escribir "La palabra ", pal, " tiene ", lpal, " letras"
+		De Otro Modo:
+			Escribir  "Opcion no disponible"
+	Fin Segun
+	
+	
+FinAlgoritmo
+
+
