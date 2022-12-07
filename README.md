@@ -104,6 +104,7 @@ FinAlgoritmo
 ## MULTI OPTION PROGRAM
 
 Algoritmo MultiOp
+
 	Escribir " ------------ MULTI OPCION ----------- "
 	Escribir "Opciones Disponibles"
 	Escribir "1. Suma de dos numeros"
