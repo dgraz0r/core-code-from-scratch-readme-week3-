@@ -161,4 +161,21 @@ Algoritmo MultiOp
 	
 FinAlgoritmo
 
+## MULTIPLICATION TABLES
+
+Algoritmo TablasMult
+
+	Escribir " ------------ TABLAS DE MULTIPLICAR ------------- "
+	Escribir "Ingrese un numero"
+	Leer num
+	mult <- 0
+	Escribir "La tabla de multiplicar de ", num, " es: "
+	Mientras mult <= 10 Hacer
+		
+		Escribir num * mult
+		mult <- mult + 1
+	Fin Mientras
+	
+FinAlgoritmo
+
 
