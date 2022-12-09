@@ -237,3 +237,29 @@ Algoritmo MultFor
 	
 FinAlgoritmo
 
+## ASCENDING AND DESCENDING NUMBERS
+
+Algoritmo AscDesc
+
+	Escribir " ------------ ASCENDING AND DESCENDING NUMBERS ----------- "
+	Escribir "Ingrese un numero"
+	Leer num
+	Escribir "Seleccion si los quiere de forma ascendente o descendente"
+	Escribir  "1. Ascendente"
+	Escribir "2. Descendente"
+	Leer  opt
+	Segun opt Hacer
+		1:
+			Para i<-0 Hasta num Con Paso 1 Hacer
+				Escribir ConvertirATexto(i)
+			Fin Para
+		2:
+			Para i<-num Hasta 0 Con Paso -1 Hacer
+				Escribir ConvertirATexto(i)
+			Fin Para
+		
+		De Otro Modo:
+			Escribir "Opcion invalida"
+	Fin Segun
+	
+FinAlgoritmo
