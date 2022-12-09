@@ -222,4 +222,18 @@ Algoritmo CalcDoWhile
 	
 FinAlgoritmo
 
+## MULTIPLICATION TABLES WITH FOR
+
+Algoritmo MultFor
+	
+	Escribir  " ------------ TABLAS DE MULTIPLICAR ------------ "
+	Escribir "Ingrese un numero: "
+	Leer num
+	Escribir "Tabla de multiplicar del ", ConvertirATexto(num)
+	Para i<-0 Hasta 10 Con Paso 1 Hacer
+		Escribir ConvertirATexto(num), " * ", ConvertirATexto(i), " = ", num * i
+		
+	Fin Para
+	
+FinAlgoritmo
 
