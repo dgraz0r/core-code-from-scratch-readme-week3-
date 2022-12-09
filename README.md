@@ -263,3 +263,31 @@ Algoritmo AscDesc
 	Fin Segun
 	
 FinAlgoritmo
+
+## GREETINGS
+
+Algoritmo Greetings
+
+	Definir cont Como Entero
+	cont <- 0
+	Repetir
+		Escribir " ------------- GREETINGS ------------- "
+		Escribir "Ingrese la hora actual (0-23)"
+		Leer hora
+		Si hora >= 0 & hora <= 12 Entonces
+			Escribir "¡Buenos dias!"
+		SiNo
+			Si hora >= 13 & hora <= 18 Entonces
+				Escribir "¡Buena tardes!"
+			SiNo
+				Escribir "¡Buenas noches!"
+			Fin Si
+		Fin Si
+		Escribir "¿Desea realizar otro saludo? (Y/N)"
+		Leer opt
+		cont <- cont + 1
+		
+	Mientras Que opt == "Y" | opt == "y"
+	Escribir "Usted ha realizado ", ConvertirATexto(cont), " saludos"
+	
+FinAlgoritmo
